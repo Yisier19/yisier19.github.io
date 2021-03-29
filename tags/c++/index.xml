@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>c&#43;&#43; on My New Hugo Site</title>
-    <link>https://yisier19.github.io/tags/c&#43;&#43;/</link>
-    <description>Recent content in c&#43;&#43; on My New Hugo Site</description>
+    <title>c&#43;&#43; on 一四二的博客</title>
+    <link>git://yisier19.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on 一四二的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yisier19.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="git://yisier19.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《c&#43;&#43; Primer Plue》知识备忘：有时cin.get()多一个的理由</title>
-      <link>https://yisier19.github.io/c&#43;&#43;_getchar/</link>
+      <link>git://yisier19.github.io/c&#43;&#43;_getchar/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yisier19.github.io/c&#43;&#43;_getchar/</guid>
+      <guid>git://yisier19.github.io/c&#43;&#43;_getchar/</guid>
       <description> cin.get(); //添加你需要输入的cin,get(); //添加你用来输入上一条的工具（回车）return 0;例如：输入一个数字，则需要输入该数字，然后按Enter键。程序将读取数字，但Enter没有被处理，这样他将被第一个cin.get()读取。
  </description>
     </item>
