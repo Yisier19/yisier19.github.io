@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>关于使用hugo搭建个人博客踩过的坑(1) - My New Hugo Site</title>
+    
+    <meta name="description" content="git add弹出警告 打开仓库的顶层目录，运行Git Bash输入代码：
+` git config core.autocrlf false `">
+    <meta name="author" content="">
+    
+    <link href="https://yisier19.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://yisier19.github.io/style.css" rel="stylesheet">
+    <link href="https://yisier19.github.io/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://yisier19.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://yisier19.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.81.0" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+          return;
+        }
+
+        const time = new Date();
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then((res) => res.json())
+            .then((data) => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://yisier19.github.io/">My New Hugo Site</a></p>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">关于使用hugo搭建个人博客踩过的坑(1)</h1>
+    <div class="post-meta">March 20, 2021</div>
+  </header>
+  <div class="post-content"><h2 id="git-add弹出警告">git add弹出警告</h2>
+<p>打开仓库的顶层目录，运行Git Bash输入代码：</p>
+<pre><code>` git config core.autocrlf false `
+</code></pre>
+<p><a href="https://imgtu.com/i/6hObDO"><img src="https://z3.ax1x.com/2021/03/20/6hObDO.md.png" alt="6hObDO.md.png"></a></p>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://yisier19.github.io/tags/%E5%8D%9A%E5%AE%A2">博客</a></li>
+    </ul>
+  </footer>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2021 <a href="https://yisier19.github.io/">My New Hugo Site</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://yisier19.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+
