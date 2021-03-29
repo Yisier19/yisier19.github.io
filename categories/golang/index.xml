@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>golang on 一四二的博客</title>
-    <link>git://yisier19.github.io/categories/golang/</link>
+    <link>https://yisier19.github.io/categories/golang/</link>
     <description>Recent content in golang on 一四二的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="git://yisier19.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yisier19.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于使用hugo搭建个人博客踩过的坑(3)</title>
-      <link>git://yisier19.github.io/bolg3/</link>
+      <link>https://yisier19.github.io/bolg3/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>git://yisier19.github.io/bolg3/</guid>
+      <guid>https://yisier19.github.io/bolg3/</guid>
       <description>hugo主题样式内容不显示  有些样式存放内容的地方就在content目录下，不需要存在类似post中，只需将写好的内容转移到content目录下即可。 </description>
     </item>
     
     <item>
       <title>《c&#43;&#43; Primer Plue》知识备忘：有时cin.get()多一个的理由</title>
-      <link>git://yisier19.github.io/c&#43;&#43;_getchar/</link>
+      <link>https://yisier19.github.io/c&#43;&#43;_getchar/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>git://yisier19.github.io/c&#43;&#43;_getchar/</guid>
+      <guid>https://yisier19.github.io/c&#43;&#43;_getchar/</guid>
       <description> cin.get(); //添加你需要输入的cin,get(); //添加你用来输入上一条的工具（回车）return 0;例如：输入一个数字，则需要输入该数字，然后按Enter键。程序将读取数字，但Enter没有被处理，这样他将被第一个cin.get()读取。
  </description>
     </item>
     
     <item>
       <title>关于使用hugo搭建个人博客踩过的坑(1)</title>
-      <link>git://yisier19.github.io/bolg1/</link>
+      <link>https://yisier19.github.io/bolg1/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>git://yisier19.github.io/bolg1/</guid>
+      <guid>https://yisier19.github.io/bolg1/</guid>
       <description>git add弹出警告 打开仓库的顶层目录，运行Git Bash输入代码：
 ` git config core.autocrlf false `</description>
     </item>
     
     <item>
       <title>关于使用hugo搭建个人博客踩过的坑(2)</title>
-      <link>git://yisier19.github.io/bolg2/</link>
+      <link>https://yisier19.github.io/bolg2/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>git://yisier19.github.io/bolg2/</guid>
+      <guid>https://yisier19.github.io/bolg2/</guid>
       <description>主题选择突然看到更喜欢的想更换 在想认真学习编程的时候，想起很多身边人和视频中的大牛都说建立自己的博客是非常重要的，于是开始了制作博客之旅。 本人是观看{祈LHL}和CodeSheep的视频学习的，整个流程非常清晰，以下只是记录自己操作时产生的问题与解决方法。（写这篇的时候发现新问题。。怎么也设置不了新页面打开）
 因为是从零开始所以是建立在最开始的时候后。 win下载新主题在themes文件夹中替换掉老主题后post中content文件中不出现文件，以至于在vscode中打开后，终端输入hugo server后的链接里根本没有主题或者干脆是显示没有找到&amp;rsquo;旧的主题名&#39;。我查询了一会发现没有类似的情况，于是咬咬牙一步一步重新开始了。 解决办法：最近的的是删除自己用运行 hugo new site &amp;lsquo;文件名&amp;rsquo;建立的文件，然后重新生成，再将自己下载的主题放进去，把视频中的两个文件替换，再打开就可以了。</description>
     </item>
